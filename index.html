@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -91,6 +92,40 @@
     .kpi{background:#fff;border-radius:16px;padding:16px;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,.08)}
     .kpi h5{color:var(--primary-orange);font-size:1rem;margin-bottom:6px}
     .kpi p{font-weight:800;color:var(--dark-gray);font-size:1.3rem}
+
+    /* NEW: Global Network Button */
+    .global-network-container{
+      text-align:center;
+      margin:25px 0 15px;
+      padding:25px;
+      background:rgba(255,255,255,.95);
+      border-radius:20px;
+      box-shadow:0 8px 25px rgba(0,0,0,.1);
+      border:2px solid rgba(166,99,204,.2);
+    }
+    .global-network-btn{
+      display:inline-block;
+      background:var(--gradient-primary);
+      color:#fff;
+      padding:16px 35px;
+      text-decoration:none;
+      border-radius:50px;
+      font-weight:700;
+      font-size:1.1rem;
+      transition:all .3s ease;
+      box-shadow:0 8px 25px rgba(0,0,0,.2);
+      position:relative;
+      overflow:hidden;
+    }
+    .global-network-btn:hover{
+      transform:translateY(-3px) scale(1.02);
+      box-shadow:0 12px 35px rgba(0,0,0,.3);
+    }
+    .global-network-btn::before{
+      content:'🌐';
+      margin-right:10px;
+      font-size:1.2em;
+    }
 
     /* Timeline */
     .admission-timeline{max-width:900px;margin:50px auto 0}
@@ -307,10 +342,21 @@
           <li>Física de Semiconductores</li>
           <li>Servicio Social</li>
         </ul></div>
-        <div class="semester-card fade-in"><h3>Noveno Semestre</h3><ul class="subject-list">
-          <li>Prácticas Profesionales</li>
-          <li style="font-style:italic;color:var(--primary-orange);font-weight:600;">Experiencia laboral real en empresas e instituciones de investigación</li>
-        </ul></div>
+        <div class="semester-card fade-in">
+          <h3>Noveno Semestre</h3>
+          <ul class="subject-list">
+            <li>Prácticas Profesionales</li>
+            <li style="font-style:italic;color:var(--primary-orange);font-weight:600;">Experiencia laboral real en empresas e instituciones de investigación</li>
+          </ul>
+          
+          <!-- NEW: Global Network Button -->
+          <div class="global-network-container fade-in">
+            <a href="https://nanoesapuaeh-maker.github.io/vinculacionycampolaboral/" target="_blank" class="global-network-btn">
+              Red Global de Oportunidades
+            </a>
+            <p style="font-size:.9rem;color:#666;margin-top:12px;">Explora convenios internacionales y oportunidades de vinculación</p>
+          </div>
+        </div>
       </div>
 
       <div style="text-align:center;margin-top:40px;">
