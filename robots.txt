@@ -1,0 +1,40 @@
+User-agent: *
+Allow: /
+
+# Permitir acceso a recursos importantes
+Allow: /assets/
+Allow: /cuerposacademicos/
+Allow: /vinculacionycampolaboral/
+
+# Bloquear archivos innecesarios para SEO
+Disallow: /*.json$
+Disallow: /README.md
+Disallow: /.github/
+
+# Sitemap location
+Sitemap: https://nanoesapuaeh-maker.github.io/sitemap.xml
+
+# Rastreadores específicos
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+# Bloquear bots no deseados
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
