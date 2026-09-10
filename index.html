@@ -47,7 +47,7 @@
     "description": "Programa de Licenciatura en Ingeniería en Nanotecnología con laboratorios especializados y enfoque interdisciplinario",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Carretera Apan-Calpulalpan s/n, Chimalpa Tlalayote",
+      "streetAddress": "Carretera Apan–Calpulalpan km 8, Chimalpa Tlalayote s/n, Col. Chimalpa",
       "addressLocality": "Apan",
       "addressRegion": "Hidalgo",
       "addressCountry": "MX"
@@ -180,9 +180,13 @@
     .timeline-item{display:flex;align-items:flex-start;gap:30px;margin-bottom:40px;padding:30px;background:#fff;border-radius:20px;box-shadow:0 8px 25px rgba(0,0,0,.08);transition:all .3s ease;position:relative;will-change:transform}
     .timeline-item:hover{transform:translateX(10px);box-shadow:0 15px 40px rgba(0,0,0,.15)}
     .timeline-number{position:relative;display:flex;align-items:center;justify-content:center;width:80px;height:80px;border-radius:50%;background:var(--gradient-secondary);color:#fff;font-weight:900;font-size:1.8rem;flex-shrink:0;border:6px solid #fff;box-shadow:0 8px 18px rgba(0,0,0,.2), inset 0 0 0 4px rgba(255,255,255,.35)}
-    .timeline-number::after{content:'PASO';position:absolute;top:-18px;font-size:.7rem;letter-spacing:1.5px;font-weight:800;color:#fff;background:rgba(0,0,0,.2);padding:3px 8px;border-radius:999px;border:1px solid rgba(255,255,255,.35)}
+    .timeline-number::after{content:'ETAPA';position:absolute;top:-18px;font-size:.7rem;letter-spacing:1.5px;font-weight:800;color:#fff;background:rgba(0,0,0,.2);padding:3px 8px;border-radius:999px;border:1px solid rgba(255,255,255,.35)}
     .timeline-content h4{color:var(--primary-red);font-size:1.15rem;font-weight:700;margin-bottom:8px}
     .timeline-date{background:var(--gradient-secondary);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-weight:700;font-size:.9rem;margin-bottom:8px}
+
+    /* Admission places badge */
+    .admission-places{display:inline-flex;align-items:center;gap:10px;background:var(--gradient-primary);color:#fff;padding:14px 28px;border-radius:50px;font-weight:700;font-size:1.1rem;margin-bottom:10px;box-shadow:0 8px 25px rgba(0,0,0,.15)}
+    .admission-places span{font-size:1.6rem;font-weight:900}
 
     /* Insight section */
     .insight{margin-top:46px}
@@ -664,25 +668,78 @@
     </div>
   </section>
 
+  <!-- =====================================================
+       SECCIÓN DE ADMISIÓN — ACTUALIZADA A CONVOCATORIA EJ2027
+       Fuente: Convocatoria UAEH Licenciatura Enero–Junio 2027
+       Fecha de emisión: 6 de agosto de 2026
+       ===================================================== -->
   <section id="admision">
-    <h2 class="section-title fade-in">Proceso de Admisión 2026</h2>
-    <p class="section-subtitle fade-in">Tu ingreso a la nanotecnología comienza aquí.</p>
+    <h2 class="section-title fade-in">Proceso de Admisión Enero–Junio 2027</h2>
+    <p class="section-subtitle fade-in">Tu ingreso a la nanotecnología comienza aquí. Hay <strong>30 lugares disponibles</strong> en la Escuela Superior de Apan.</p>
     
+    <div style="text-align:center;margin-bottom:30px;">
+      <div class="admission-places fade-in">
+        🎓 <span>30</span> lugares disponibles · ESAp, Apan, Hidalgo
+      </div>
+    </div>
+
     <div class="admission-timeline">
-      <div class="timeline-item fade-in"><div class="timeline-number">1</div><div class="timeline-content"><div class="timeline-date">12 de ago – 10 de oct, 2025</div><h4>Registro en línea</h4><p>Completa encuestas, realiza el pago ($600 MXN) y genera tu pase.</p></div></div>
-      <div class="timeline-item fade-in"><div class="timeline-number">2</div><div class="timeline-content"><div class="timeline-date">Requisitos Académicos</div><h4>Documentación</h4><p>Bachillerato concluido antes del 19 ene 2026, promedio ≥7.0, sin baja definitiva previa.</p></div></div>
-      <div class="timeline-item fade-in"><div class="timeline-number">3</div><div class="timeline-content"><div class="timeline-date">27 de nov, 2025</div><h4>Examen de admisión</h4><p>Comprensión lectora, redacción, pensamiento matemático y módulos de ingeniería.</p></div></div>
-      <div class="timeline-item fade-in"><div class="timeline-number">4</div><div class="timeline-content"><div class="timeline-date">1 de dic, 2025 — 19:00 h</div><h4>Resultados y matrícula</h4><p>Consulta resultados y completa tu inscripción.</p></div></div>
+      <div class="timeline-item fade-in">
+        <div class="timeline-number">1</div>
+        <div class="timeline-content">
+          <div class="timeline-date">19 de ago – 16 de oct, 2026</div>
+          <h4>Pre-registro, encuesta socioeconómica y pago</h4>
+          <p>Ingresa al micrositio de aspirantes, selecciona <strong>Ingeniería en Nanotecnología</strong> y la sede <strong>Escuela Superior de Apan (ESAp)</strong>. Completa la encuesta socioeconómica y realiza el pago de derechos de $600.00 MXN. Opcionalmente puedes indicar una segunda opción de programa.</p>
+        </div>
+      </div>
+      <div class="timeline-item fade-in">
+        <div class="timeline-number">2</div>
+        <div class="timeline-content">
+          <div class="timeline-date">19 de ago – 6 de nov, 2026</div>
+          <h4>Encuesta de factores de riesgo a la salud</h4>
+          <p>Completa la encuesta de salud en el sistema dentro del plazo. Sin esta etapa no podrás continuar a la generación del pase de examen.</p>
+        </div>
+      </div>
+      <div class="timeline-item fade-in">
+        <div class="timeline-number">3</div>
+        <div class="timeline-content">
+          <div class="timeline-date">A partir del 17 de nov, 2026</div>
+          <h4>Generación del pase de ingreso al examen</h4>
+          <p>Descarga tu pase donde se especificará el lugar, fecha, hora e indicaciones para presentarte al examen. Consérvalo en digital e impreso.</p>
+        </div>
+      </div>
+      <div class="timeline-item fade-in">
+        <div class="timeline-number">4</div>
+        <div class="timeline-content">
+          <div class="timeline-date">1 de diciembre de 2026 · Presencial</div>
+          <h4>Examen de admisión</h4>
+          <p>Presenta tu pase de ingreso y una identificación oficial vigente con fotografía. El examen evalúa: comprensión lectora, redacción indirecta, pensamiento matemático y dos módulos disciplinares.</p>
+        </div>
+      </div>
+      <div class="timeline-item fade-in">
+        <div class="timeline-number">5</div>
+        <div class="timeline-content">
+          <div class="timeline-date">A partir del 3 de diciembre de 2026</div>
+          <h4>Selección de aspirantes y consulta de resultados</h4>
+          <p>La selección se realiza en función del puntaje obtenido, el cumplimiento de requisitos y la disponibilidad de los 30 lugares del programa en la ESAp. Consulta resultados en el micrositio oficial.</p>
+        </div>
+      </div>
     </div>
     
-    <div style="text-align:center;margin-top:30px;margin-bottom:40px;">
-      <a href="https://www.uaeh.edu.mx/aspirantes/licenciatura/" target="_blank" class="cta-button" style="display:inline-block;margin:0;" rel="noopener">Ir a página de convocatoria</a>
+    <div style="text-align:center;margin-top:30px;margin-bottom:20px;">
+      <a href="https://www.uaeh.edu.mx/aspirantes/licenciatura/" target="_blank" class="cta-button" style="display:inline-block;margin:0 8px 12px;" rel="noopener">📋 Ir al micrositio de registro</a>
+      <a href="https://www.uaeh.edu.mx/aspirantes/licenciatura/docs/convocatoria-licenciatura-ej-2027.pdf" target="_blank" class="cta-button secondary" style="display:inline-block;margin:0 8px 12px;background:var(--gradient-secondary);color:#fff;border:none;" rel="noopener">📄 Ver convocatoria oficial (PDF)</a>
     </div>
+
     <div style="text-align:center;margin-top:46px;padding:32px;background:#fff;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.1);border-left:5px solid var(--primary-orange);">
-      <h4 style="color:var(--primary-red);margin-bottom:12px;font-size:1.2rem;">¿Tienes el perfil?</h4>
-      <p style="color:#666;margin-bottom:16px;">Sólidos conocimientos en <strong>matemáticas, física y química</strong>, comunicación efectiva y trabajo en equipo.</p>
+      <h4 style="color:var(--primary-red);margin-bottom:12px;font-size:1.2rem;">Requisitos para registrarte</h4>
+      <p style="color:#666;margin-bottom:10px;">Bachillerato concluido (o equivalente) antes del inicio del ciclo escolar conforme al Calendario 2026-2027 de la UAEH.</p>
+      <p style="color:#666;margin-bottom:10px;">Promedio mínimo de <strong>7.0</strong> en el certificado total de bachillerato.</p>
+      <p style="color:#666;margin-bottom:16px;">No haber causado baja definitiva en la UAEH.</p>
+      <h4 style="color:var(--primary-red);margin-bottom:12px;font-size:1.1rem;">¿Tienes el perfil?</h4>
+      <p style="color:#666;margin-bottom:16px;">Conocimientos en el área <strong>químico-biológica, físico-matemática</strong> o bachillerato general, razonamiento lógico-matemático y verbal, e interés por la ciencia aplicada.</p>
       <a href="#contacto" class="download-btn">💬 Resuelve tus dudas</a>
-      <p class="small-note">*Fechas sujetas a cambios.</p>
+      <p class="small-note">*Fechas conforme a la Convocatoria Licenciatura Enero–Junio 2027 (emitida el 6 de agosto de 2026). Cada etapa debe concluirse dentro del plazo; no hay prórrogas.</p>
     </div>
   </section>
 
@@ -698,12 +755,16 @@
           <div><strong>Coordinación del Programa:</strong><br>esap_ing.nanotecnologia@uaeh.edu.mx</div>
         </div>
         <div class="contact-item">
+          <div class="contact-icon">📧</div>
+          <div><strong>Dudas sobre la convocatoria:</strong><br>convocatoria_dudas@uaeh.edu.mx</div>
+        </div>
+        <div class="contact-item">
           <div class="contact-icon">📱</div>
-          <div><strong>Teléfono:</strong><br>771 717 2000, Ext. 10703</div>
+          <div><strong>Teléfono UAEH:</strong><br>771 717 2000<br>Ext. 5811 (Coordinación del programa)<br>Ext. 10703 (Comisión de Selección y Admisión)</div>
         </div>
         <div class="contact-item">
           <div class="contact-icon">📍</div>
-          <div><strong>Escuela Superior de Apan:</strong><br>Carretera Apan-Calpulalpan s/n<br>Chimalpa Tlalayote, Hidalgo, México</div>
+          <div><strong>Escuela Superior de Apan:</strong><br>Carretera Apan–Calpulalpan km 8, Chimalpa Tlalayote s/n<br>Col. Chimalpa, Apan, Hidalgo, México</div>
         </div>
         
         <div class="social-media">
@@ -746,7 +807,7 @@
           </select>
         </div>
         <div class="form-group"><textarea name="mensaje" rows="4" placeholder="¿Qué te interesa saber sobre el programa?" aria-label="Mensaje"></textarea></div>
-        <input type="hidden" name="_subject" value="Solicitud de información - Nanotecnología UAEH">
+        <input type="hidden" name="_subject" value="Solicitud de información - Nanotecnología UAEH EJ2027">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_captcha" value="false">
         <button type="submit" class="submit-btn">Enviar solicitud</button>
