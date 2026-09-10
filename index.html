@@ -228,6 +228,25 @@
     .submit-btn{background:#fff;color:var(--primary-red);padding:16px 40px;border:none;border-radius:50px;font-size:1.1rem;font-weight:700;cursor:pointer;transition:all .3s ease;width:100%;box-shadow:0 8px 25px rgba(0,0,0,.2);will-change:transform}
     .submit-btn:hover{transform:translateY(-3px);box-shadow:0 12px 35px rgba(0,0,0,.3)}
 
+    /* Video embed sections */
+    .video-section{background:#fff;margin:0 -20px;padding:50px 20px;position:relative;overflow:hidden}
+    .video-section.alt-bg{background:var(--light-gray)}
+    .video-section-inner{max-width:1400px;margin:0 auto}
+    .video-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center;margin-top:30px}
+    .video-grid.reverse{grid-template-columns:1fr 1.1fr}
+    .video-wrapper{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:20px;box-shadow:0 15px 45px rgba(0,0,0,.15);background:#000}
+    .video-wrapper iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;border-radius:20px}
+    .video-text h3{font-size:clamp(1.4rem,3vw,1.8rem);font-weight:800;color:var(--dark-gray);margin-bottom:14px;line-height:1.3}
+    .video-text p{font-size:1.05rem;color:#555;line-height:1.8;margin-bottom:12px}
+    .video-text .video-tag{display:inline-block;background:rgba(166,99,204,.1);border:1px solid rgba(166,99,204,.25);color:#4b3a5f;padding:6px 14px;border-radius:999px;font-size:.85rem;font-weight:600;margin:4px 4px 4px 0}
+    .video-banner{max-width:900px;margin:0 auto;text-align:center}
+    .video-banner .video-wrapper{max-width:800px;margin:0 auto}
+    .video-banner p{font-size:1.05rem;color:#555;margin-top:18px;line-height:1.7;max-width:700px;margin-left:auto;margin-right:auto}
+    @media(max-width:768px){
+      .video-grid,.video-grid.reverse{grid-template-columns:1fr;gap:25px}
+      .video-section{padding:40px 20px}
+    }
+
     /* Utility classes */
     .fade-in{opacity:0;transform:translateY(30px);transition:all .6s ease}
     .fade-in.visible{opacity:1;transform:translateY(0)}
@@ -354,6 +373,34 @@
       </div>
     </div>
   </section>
+
+  <!-- VIDEO 1: Enganche — ¿Qué es la nanotecnología y por qué importa? -->
+  <div class="video-section fade-in">
+    <div class="video-section-inner">
+      <div class="video-grid">
+        <div class="video-wrapper">
+          <iframe 
+            src="https://www.youtube-nocookie.com/embed/yLGdqS4kVg8?rel=0" 
+            title="Descubre la nanotecnología" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+        <div class="video-text">
+          <h3>Descubre por qué la nanotecnología está transformando el mundo</h3>
+          <p>La manipulación de la materia a escala nanométrica ya está revolucionando la medicina, la electrónica, la energía y los materiales avanzados. Este video te muestra cómo esta ciencia de frontera abre oportunidades que no existían hace una década.</p>
+          <div style="margin-top:14px;">
+            <span class="video-tag">🔬 Nanoescala</span>
+            <span class="video-tag">💊 Nanomedicina</span>
+            <span class="video-tag">⚡ Energía</span>
+            <span class="video-tag">💡 Innovación</span>
+          </div>
+          <a href="#programa" class="download-btn">Conoce el programa completo →</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="stats">
     <div class="stats-container">
@@ -488,6 +535,29 @@
       Ecosistema experimental y computacional para diseñar, fabricar, caracterizar y simular materiales y dispositivos desde el primer semestre.
     </p>
 
+    <!-- VIDEO 2: Conoce nuestros laboratorios y lo que podrás hacer -->
+    <div class="video-grid reverse fade-in" style="margin-bottom:40px;">
+      <div class="video-text">
+        <h3>Conoce dónde aprenderás a hacer nanotecnología</h3>
+        <p>Microscopio electrónico de barrido, análisis térmico, simulación computacional de alto rendimiento… Desde el primer semestre tendrás acceso a equipos que en otras universidades solo usan los posgrados.</p>
+        <div style="margin-top:14px;">
+          <span class="video-tag">🔬 SEM JEOL IT300</span>
+          <span class="video-tag">🖥️ HPC 144 núcleos</span>
+          <span class="video-tag">🌡️ DSC Maia®</span>
+        </div>
+        <a href="#contacto" class="download-btn">📎 Solicita una visita guiada</a>
+      </div>
+      <div class="video-wrapper">
+        <iframe 
+          src="https://www.youtube-nocookie.com/embed/bU-a06nwJwA?rel=0" 
+          title="Laboratorios de Nanotecnología ESAp UAEH" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+
     <div class="lab-hero fade-in">
       <div class="lab-hero-badge">
         <h4>Aprender haciendo</h4>
@@ -616,6 +686,27 @@
       </div>
     </div>
   </section>
+
+  <!-- VIDEO 3: Visión de futuro — puente entre campo laboral y mercado -->
+  <div class="video-section alt-bg fade-in">
+    <div class="video-section-inner">
+      <div class="video-banner">
+        <h2 class="section-title" style="margin-bottom:12px;">El futuro es nano</h2>
+        <p class="section-subtitle" style="margin-bottom:30px;">Conoce el impacto real de la nanotecnología y por qué los profesionales de esta área son cada vez más demandados.</p>
+        <div class="video-wrapper">
+          <iframe 
+            src="https://www.youtube-nocookie.com/embed/3_2qxvqkJeA?rel=0" 
+            title="El futuro de la nanotecnología" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+        <p style="margin-top:20px;">La nanotecnología no es el futuro: ya está aquí. Desde la pantalla de tu celular hasta los tratamientos médicos de precisión, esta disciplina redefine lo que es posible. Prepárate para ser parte de esta revolución.</p>
+        <a href="#admision" class="cta-button" style="display:inline-block;margin-top:20px;">🎓 Quiero inscribirme</a>
+      </div>
+    </div>
+  </div>
 
   <section id="mercado">
     <h2 class="section-title fade-in">Mercado y Oportunidades</h2>
